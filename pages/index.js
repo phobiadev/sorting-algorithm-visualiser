@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Head from "next/head"
 
 import ColorKey from "../components/ColorKey";
 import Bars from "../components/Bars";
@@ -80,6 +81,9 @@ export default function App() {
 
   return (
     <div>
+      <Head>
+        <title>Sorting Algorithm Visualiser</title>
+      </Head>
       <div className="grid place-items-center h-screen w-screen dark:bg-gray-800">
         <div className="grid place-items-center">
           <div className="bg-gray-100 p-[4%] rounded-md bottom-0 dark:bg-gray-700">
